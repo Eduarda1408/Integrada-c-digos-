@@ -1,0 +1,149 @@
+/*Padrão para a página toda*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Estes elementos deixam o controle da página mais preciso*/
+  }
+
+  /* Ponto de ancoragem no topo */
+#topo {
+    position: absolute;
+    top: 0; /*define que está no topo*/
+    width: 100%; /*Ocupa toda a largura*/
+  }
+  
+  /* Estilo do botão */
+  #btn-topo {
+    position: fixed;/*Fixa o botão em um único local, mesmo ao rolar a página*/
+    bottom: 20px;/*botão no canto inferior direito*/
+    right: 20px;/*botão no canto inferior direito*/
+    background-color: #ddaaf3; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 15px;/*Espaçamento interno*/
+    border-radius: 5px;/*Borda arredondada para o botão*/
+    font-size: 16px;/*Tamanho da fonte*/
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: block; /*Botão como bloco*/
+  }
+  
+  #btn-topo:hover {
+    background-color: #ddaaf3; /* Efeito hover */
+  }
+  
+  /* Corpo */
+  body {
+    font-family: Arial, sans-serif;/*Fonte*/
+    background-color: #f6e0ff;/*Cor de fundo*/
+    color: #807e7e;/*Cor de texto*/
+    padding: 20px;/*espaço ao redor do conteúdo*/
+    line-height: 1.6;/*Espaçamento entre linhas*/
+  }
+  
+  /* Cabeçalho */
+  #cabecalho {
+    display: flex;/*layout flexível para o bloco do cabeçalho*/
+    align-items: center;/*Alinha os itens*/
+    justify-content: flex-start; /* Alinha os itens no início do cabeçalho */
+    background-color: #380741;/*Cor de fundo*/
+    padding: 20px;/*Espaço interno*/
+    border-radius: 8px;/*Arredondamento das bordas*/
+    margin-bottom: 30px;/*Espaço abaixo do cabeçalho*/
+    gap: 400px;/*Espaçamento entre a foto e a escrita*/
+  }
+  
+  #cabecalho h1, #cabecalho h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  #foto img {
+    border-radius: 50%;/*Arredonda as bordas em 50%, formando um círculo*/
+    width: 220px;/*Tamanho*/
+    height: 220px;/*Tamanho*/
+    margin-right: 10px; /* Ajusta a margem direita para aproximar a imagem do texto */
+    object-fit: cover;/*Garante preenchimento sem distorção da imagem*/
+    object-position: top center; /* Ajusta a posição da imagem dentro do círculo */
+  }
+  
+  /* Linhas separadoras */
+  #linha1 {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  /* Seções */
+  .section {
+    background-color: rgb(250, 248, 225);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);/*Sombra sutil ao redor da seção*/
+    text-align: justify;/*Justifica o texto*/
+  }
+  
+  .section h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .section ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .section ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Links */
+  #a {
+    color: blue;  /* Cor do link */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(160, 30, 207); /* Cor do link com o mouse em cima */
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgba(255, 15, 239, 0.833); /* Cor do link ao clicar */
+  }
+  
+  /* Títulos do currículo */
+  h1 {
+    font-size: 2.5em;
+    color: #dbdbdb;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #666;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;/*Centraliza*/
+    margin-top: 40px;/*Espaço acima*/
+    font-size: 0.9em;/*Tamanho da fonte*/
+    color: #ddaaf3;/*Cor da fonte*/
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px){
+  /*Aplica os estilos somente quando a largura da tela for menor ou igual a 768px.*/ 
+    #cabecalho {
+        flex-direction: row;/*Alinha os elementos um ao lado do outro*/
+        text-align: center;/*Alinha o texto centralizado*/
+    }
+  }
+  

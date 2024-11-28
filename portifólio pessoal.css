@@ -1,0 +1,50 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centralização de elementos */
+.centered {
+    text-align: center;
+}
+
+/* Estilos dos títulos */
+h1, h2, h3 {
+    text-align: center;
+    line-height: 0.5;
+}
+
+/* Estilo para fontes personalizadas */
+h3 {
+    font-family: "Parisienne", cursive;
+    color: gray;
+}
+
+/* Estilos para imagens */
+img {
+    display: block;
+    margin: 0 auto;
+    line-height: 1.0;
+    width: 250px;
+}
+
+/* Divisores */
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Títulos em roxo */
+strong font[color="purple"] {
+    color: purple;
+}

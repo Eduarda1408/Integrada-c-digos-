@@ -1,0 +1,198 @@
+/* Estilo para os links do navbar */
+.navbar-nav .nav-link {
+  color: #e5e5ff !important; /* Cor clara padrão */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efeito de transição */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #6a5acd; /* Fundo roxo ao passar o mouse */
+  color: #ffffff !important; /* Texto branco ao passar o mouse */
+  border-radius: 5px; /* Bordas arredondadas para o efeito */
+}
+
+/* Ajuste do tamanho do carrossel */
+#carousel .carrossel-img {
+  align-items: center;
+  height: 600px; /* Define a altura fixa */
+  width: 100%; /* Garante que a imagem preencha a largura do contêiner */
+  object-fit: cover; /* Ajusta o conteúdo da imagem dentro da área definida */
+  object-position: 50% 20%;
+  border-radius: 20px; /* Arredonda as bordas das imagens */
+}
+
+/* Estilo personalizado para o Navbar */
+.navbar {
+  background-color: #5a4a8d !important; /* Cor de fundo personalizada (roxo escuro) */
+  border-bottom: 3px solid #8a79d9; /* Adiciona uma borda inferior com tom mais claro */
+}
+
+.navbar .nav-link {
+  color: #dcdcff !important; /* Cor dos links no navbar */
+  transition: color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.navbar .nav-link:hover {
+  color: #eaeaff !important; /* Muda a cor ao passar o mouse */
+}
+
+/* Cor personalizada para o texto do navbar-brand */
+.navbar-brand {
+  color: #eaeaff !important; /* Cor branca */
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 1.5rem; /* Tamanho do texto */
+  transition: color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+/* Estilização do logo no navbar */
+.navbar-logo {
+  height: 40px; /* Define o tamanho da imagem (altura) */
+  margin-right: 5px; /* Espaço entre a imagem e o texto */
+  border-radius: 20%; /* Torna a imagem circular */
+}
+
+/* Estilo geral do corpo */
+body {
+  background-color: #f7f4fc; /* Fundo claro com tom roxo suave */
+  font-family: "Poppins", sans-serif; /* Fonte sofisticada */
+  color: #4a3f70; /* Cor do texto */
+}
+
+/* Títulos das seções */
+h2 {
+  text-align: center;
+  color: #4a3f70; /* Roxo escuro */
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Cards das áreas do saber */
+.card {
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: #eaeaff; /* Fundo claro */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Botões estilizados para links */
+.btn-card {
+  cursor: pointer;
+  border: none; /* Remove a borda padrão */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  color: #ffffff; /* Texto branco */
+  background-color: #6a5acd; /* Fundo roxo */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+}
+
+.btn-card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  box-shadow: 0px 4px 15px rgba(106, 90, 205, 0.4); /* Adiciona sombra ao botão */
+  background-color: #4e3d88; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilização da seção "Saiba mais sobre mim" */
+#pessoal {
+  background-color: #eaeaff; /* Fundo claro com tom roxo */
+  color: #4a3f70; /* Texto em roxo escuro */
+  padding: 50px 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 50px; /* Espaçamento superior */
+}
+
+#pessoal h2 {
+  font-size: 2rem; /* Tamanho do título maior */
+  color: #6a5acd; /* Tom de roxo vibrante */
+  font-weight: bold;
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+#pessoal p {
+  font-size: 1.2rem; /* Texto maior */
+  line-height: 1.6; /* Melhora o espaçamento entre linhas */
+  margin-top: 20px;
+  color: #4a3f70; /* Roxo escuro */
+}
+
+#pessoal .hobby-list {
+  margin-top: 20px;
+  font-size: 1rem;
+  list-style-type: none; /* Remove marcadores */
+  padding: 0;
+}
+
+#pessoal .hobby-list li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+  display: flex; /* Para ícones alinhados com o texto */
+  align-items: center;
+  color: #4e3d88; /* Roxo vibrante */
+}
+
+#pessoal .hobby-list li::before {
+  content: '⭐'; /* Adiciona um ícone personalizado */
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #5a4a8d; /* Roxo escuro */
+  color: #eaeaff; /* Texto claro */
+  margin-top: 2rem;
+}
+
+/* Carrossel: Personalização das setas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #6a5acd; /* Fundo roxo */
+  border-radius: 50%; /* Torna as setas circulares */
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-caption h5 {
+  color: #ffffff; /* Texto branco */
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+.carousel-caption p {
+  color: #eaeaff; /* Texto branco mais claro */
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  

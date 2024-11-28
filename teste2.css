@@ -1,0 +1,190 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Fundo suave */
+    
+    /* Especificações da imagem de fundo */
+    background-image: url('sage_light_green_swirly_aesthetic_cottage_core_y2k_clean_girl_wallpaper.jpeg'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover; /* A imagem irá cobrir toda a tela */
+    background-position: center center; /* A imagem será centralizada */
+    background-repeat: no-repeat; /* A imagem não se repetirá ao longo da página */
+    
+    /* Centralização do formulário com Flexbox */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Container centralizado */
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Preenche a altura total da tela */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+/* Espaçamento entre o cabeçalho e o formulário */
+header {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* Cabeçalho do formulário */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #157933;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 150%;
+    max-width: 600px; /* Limita a largura máxima do formulário */
+}
+
+/* Estilo do campo fieldset */
+fieldset {
+    border: 1px solid #ccc; /* Bordas mais suaves */
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px; /* Espaçamento entre os fieldsets */
+    background-color: #fafafa; /* Fundo suave no campo */
+}
+
+/* Estilo da legenda */
+legend {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Estilo dos rótulos (labels) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Estilo dos campos de entrada (input e textarea) */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fafafa;
+    box-sizing: border-box; /* Para incluir o padding no cálculo da largura */
+}
+
+/* Estilo do botão de envio */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #157933;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito suave na troca de cor */
+}
+
+button:hover {
+    background-color: #0d5423;
+}
+
+/* Efeito de foco nos campos de entrada */
+input:focus, textarea:focus {
+    border-color: #157933;
+    outline: none; /* Retira a borda padrão do foco */
+}
+
+/* Estilo para os campos de seleção (radio e checkbox) */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Estilo da seção de Comentários (textarea) */
+textarea {
+    resize: vertical; /* Permite que o usuário redimensione verticalmente */
+    height: 120px; /* Define uma altura inicial */
+}
+
+/* Estilo para a exibição dos dados após envio (exemplo de output) */
+pre {
+    background-color: #f4f7fc;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Esconde os botões de rádio padrão */
+.avaliacao input[type="radio"] {
+    display: none;
+}
+
+/* Estilo para as estrelas */
+.avaliacao label {
+    display: inline-block;
+    width: 40px; /* Tamanho da estrela */
+    height: 40px;
+    margin: 0 5px;
+    background-color: #ccc; /* Cor padrão */
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    ); /* Formato de estrela */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Quando o mouse passa por cima */
+.avaliacao input[type="radio"]:hover ~ label {
+    background-color: #ffc107; /* Amarelo ao passar o mouse */
+}
+
+/* Quando a estrela for selecionada */
+.avaliacao input[type="radio"]:checked ~ label {
+    background-color: #ffd700; /* Dourado para as estrelas selecionadas */
+}
+
+/* Estilo quando a estrela é selecionada */
+.avaliacao input[type="radio"]:checked + label {
+    background-color: #ffd700; /* Dourado para a estrela selecionada */
+}
+
+/* Estilo para as estrelas anteriores à selecionada */
+.avaliacao input[type="radio"]:checked + label ~ label {
+    background-color: #ffd700; /* Todas as estrelas à esquerda ficam douradas */
+}

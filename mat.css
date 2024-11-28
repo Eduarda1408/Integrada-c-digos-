@@ -1,0 +1,207 @@
+/* Resetando margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f; /* Fundo escuro e misterioso, para dar a sensação de complexidade */
+    color: white;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6); /* Gradiente roxo-vibrante para simbolizar criatividade */
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+header .intro-text {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    animation: fadeInText 2s ease-out forwards;
+}
+
+/* Animação de fade-in para o texto */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seções de conteúdo */
+section {
+    padding: 80px 0;
+    margin-top: 50px;
+    background-color: #2d3e50;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(60px);
+    animation: slideInUp 1.5s ease-out forwards;
+}
+
+/* Animação de entrada suave para as seções */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título das seções */
+h2.highlight {
+    font-size: 2.6rem;
+    color: #9b59b6;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Imagens e gráficos interativos */
+.math-image img, .math-experiment img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.math-image img:hover, .math-experiment img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* Efeitos de hover nas imagens */
+.math-anim {
+    transition: all 0.3s ease-in-out;
+}
+
+.math-anim:hover {
+    transform: rotate(8deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Parágrafos com explicações das tarefas */
+.math-task, .math-experiment {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Rodapé */
+footer {
+    background-color: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 70px;
+    border-top: 5px solid #9b59b6;
+    box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+}
+/* Botões */
+.btn-primary {
+    background-color: #5a4a8d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #6a5acd;
+}
+
+/* Estilo do botão de voltar */
+button {
+    background-color: #5a4a8d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a5acd;
+}
+
+/* Estilo do botão quando estiver focado */
+button:focus {
+    outline: none;  /* Remove o contorno padrão ao focar no botão */
+    box-shadow: 0 0 5px rgba(90, 74, 141, 0.7); /* Adiciona uma sombra suave quando o botão é clicado */
+}
+
+/* Imagens lado a lado (projetos) */
+.card-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo personalizado para o botão */
+button, .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #bf86ec;
+}

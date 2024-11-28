@@ -1,0 +1,142 @@
+/* Resetando algumas propriedades para garantir uma base limpa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6d0f8; /* Cor de fundo lilás */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+    position: relative; /* Necessário para o posicionamento do botão */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #5a4a8d !important;
+    border-bottom: 3px solid #8a79d9;
+}
+
+.navbar .nav-link {
+    color: #dcdcff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+    background-color: #6a5acd;
+    border-radius: 5px;
+}
+
+/* Título da Página */
+h2 {
+    color: #5a4a8d;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+/* Descrição dos Projetos */
+#projetos-iot p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* Cards de Projetos IoT */
+.card {
+    margin-top: 40px;
+    border-radius: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.card-body {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #5a4a8d;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #777;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.card img {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #5a4a8d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #6a5acd;
+}
+
+/* Estilo do botão de voltar */
+button {
+    background-color: #5a4a8d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a5acd;
+}
+
+/* Estilo do botão quando estiver focado */
+button:focus {
+    outline: none;  /* Remove o contorno padrão ao focar no botão */
+    box-shadow: 0 0 5px rgba(90, 74, 141, 0.7); /* Adiciona uma sombra suave quando o botão é clicado */
+}
+
+/* Imagens lado a lado (projetos) */
+.card-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo personalizado para o botão */
+button, .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #bf86ec;
+}
